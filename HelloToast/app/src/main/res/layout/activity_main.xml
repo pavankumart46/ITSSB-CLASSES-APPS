@@ -6,20 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="5dp"
     tools:context=".MainActivity">
 
     <Button
+        android:layout_weight="1"
         android:textColor="#FFFFFF"
         android:background="@color/colorPrimary"
         android:textStyle="bold"
         android:text="Toast"
+        android:onClick="showToast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/counter"
+        android:layout_weight="8"
         android:textColor="#000"
         android:background="#FAD302"
         android:text="0"
+        android:gravity="center"
         android:textSize="100sp"
         android:textStyle="bold"
         android:layout_width="match_parent"
@@ -27,6 +33,8 @@
 
 
     <Button
+        android:onClick="showCount"
+        android:layout_weight="1"
         android:textColor="#FFFFFF"
         android:background="@color/colorPrimary"
         android:textStyle="bold"
